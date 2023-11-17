@@ -1,4 +1,5 @@
 const SCRAP_FB = require("./scrap-fb.js");
+const OpenUrl = require("openurl")
 //const open = (...args) => import('open').then(({ default: fetch }) => fetch(...args));
 const INTERVAL = 30000;
 
@@ -9,8 +10,8 @@ const INTERVAL = 30000;
         console.count()
         if (current && previous && current !== previous) {
             console.log("NEW");
-            open('https://www.facebook.com/czc.cz');
-            open(current);
+            OpenUrl.open("https://www.facebook.com/czc.cz")
+            OpenUrl.open(current);
         }
         if (current) {
             previous = current
