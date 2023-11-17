@@ -1,7 +1,7 @@
 const SCRAP_FB = require("./scrap-fb.js");
 const OpenUrl = require("openurl")
 //const open = (...args) => import('open').then(({ default: fetch }) => fetch(...args));
-const INTERVAL = 30000;
+const INTERVAL = 15000;
 
 (async function () {
     let current, previous;

@@ -9,7 +9,7 @@ async function SCRAP_FB() {
   try {
     const page = await browser.newPage();
     await page.goto("https://www.facebook.com/czc.cz");
-    await page.waitForTimeout(30000);
+    await page.waitForTimeout(5000);
     await page.screenshot({ path: `./scrapingbee_homepage.jpg` });
 
     let returnedElement = await page.evaluate(() => {
