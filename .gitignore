@@ -1,0 +1,4 @@
+node_modules/*
+user_data_dir/*
+config.json
+package-lock.json
