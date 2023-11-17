@@ -8,11 +8,9 @@ const INTERVAL = 30000;
         current = await SCRAP_FB()
         console.count()
         if (current && previous && current !== previous) {
-            console.log("https://www.facebook.com/czc.cz");
-            console.log(current);
             console.log("NEW");
-            //open('https://www.facebook.com/czc.cz');
-            ///open(current);
+            open('https://www.facebook.com/czc.cz');
+            open(current);
         }
         if (current) {
             previous = current
